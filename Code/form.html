@@ -1,68 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="animated fadeIn">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Content Slider</title>
+    <title>Shelter Source</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css"/>
-    <link rel="stylesheet" type="text/css" media="screen" href="style/form.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="form.css"/>
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css"/>
+    <link rel="stylesheet" href="animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
     <script src="jquery/dist/jquery.js"></script>
-    <script type="text/javascript" src="js/form.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="form.js"></script>
 </head>
 <body>
-    <div id="contentContainer">
-        <div id="wrapper">
-                <form name="form" action="result2.php" method="post">
-                <div id="itemOne" class="content">
-                        <label>County</label>
-                            <select name="county">
-                                <option>Dekalb</option>
-                                <option>Fulton</option>
-                            </select>
-                </div>
-                <div id="itemTwo" class="content">
-                        <label>Disabilty</label>
-                            <select name="disability">
-                                <option>yes</option>
-                                <option>no</option>
-                                <option>I choose not to identify</option>
-                            </select>  
-                </div>
-                <div id="itemThree" class="content">
-                    <label>Veteran</label>
-                        <select name="veteran">
-                            <option>yes</option>
-                            <option>no</option>
-                            <option>I choose not to identify</option>
-                        </select>  
-                </div>
-                <div id="itemFour" class="content">
-                    <label>Type of Resource</label>
-                        <select name="resources[]" multiple>
-                            <option>Charitable Organization</option>
-                            <option>Women-Only Shelter</option>
-                            <option>Men-Only Shelter</option>
-                            <option>Family Shelter</option>
-                            <option>Youth Shelter</option>
-                            <option>Emergency Shelter</option>
-                        </select>  
-                    <input type="submit" value="Submit">
-                </div>
-            </form>
+    <div id="header">
+        <div class="container">
+
+            <!--LOGO STARTS -->
+                <div class="row justify-content-start">
+                        <div class="col-12">
+                            <div id="logo">
+                                    <img src="Images/logo.png" id="logo1">
+                            </div>
+                        </div>
+                    </div>
+             <!--LOGO ENDS -->
+
+            <div id="contentContainer">
+                <div id="wrapper">
+                        <form name="form" action="result2.php" method="post">
+                        <div id="itemOne" class="content">
+                                <label id="welcome2">Please pick a county nearest to you.</label>
+                                <div id="count">
+                                    <select name="county" id="county-select">
+                                        <option>Dekalb</option>
+                                        <option>Fulton</option>
+                                    </select>
+                                </div>
+                                <div id="button">
+                                    <div id="button1"><a href="home.html"><i class="fa fa-home fa-2x"></i></a></div>
+                                    <div id="button2" class="itemLinks"><i class="fa fa-arrow-right fa-2x"  data-pos="-600px"></i></div>
+                                </div>
+                        </div>
+                        <div id="itemTwo" class="content">
+                                <label id="welcome2">Do you have a disabilty?</label>
+                                <div id="dis">
+                                    <select name="disability" id="disability-select">
+                                        <option>yes</option>
+                                        <option>no</option>
+                                        <option>I choose not to identify</option>
+                                    </select> 
+                                </div> 
+                                <div id="button">
+                                        <div id="button1" class="itemLinks"><i class="fa fa-arrow-left fa-2x"  data-pos="0px"></i></div>
+                                        <div id="button2" class="itemLinks"><i class="fa fa-arrow-right fa-2x"  data-pos="-1200px"></i></div>
+                                </div>
+                        </div>
+                        <div id="itemThree" class="content">
+                            <label id="welcome2">Are you a veteran?</label>
+                                <div id="vet">
+                                    <select name="veteran" id="veteran-select">
+                                        <option>yes</option>
+                                        <option>no</option>
+                                        <option>I choose not to identify</option>
+                                    </select>  
+                                </div>
+                                <div id="button">
+                                    <div id="button1" class="itemLinks"><i class="fa fa-arrow-left fa-2x"  data-pos="-600px"></i></div>
+                                    <div id="button2" class="itemLinks"><i class="fa fa-arrow-right fa-2x"  data-pos="-1800px"></i></div>
+                                </div>
+                        </div>
+                        <div id="itemFour" class="content">
+                            <label id="welcome2">What type of charitable resource(s) are you looking for?</label>
+                                <div id="res">
+                                    <select name="resources[]" multiple="" id="resource-select" class="ui fluid mutiple select dropdown">
+                                        <option>Charitable Organization</option>
+                                        <option>Women-Only Shelter</option>
+                                        <option>Men-Only Shelter</option>
+                                        <option>Family Shelter</option>
+                                        <option>Youth Shelter</option>
+                                        <option>Emergency Shelter</option>
+                                    </select>  
+                                </div>
+                                <div id="submitButton">
+                                        <div id="button1" class="itemLinks"><i class="fa fa-arrow-left fa-2x"  data-pos="-1200px"></i></div>
+                                        <div id="button2" class="itemLinks"><input type="submit" value="Submit" style = "font-size:20px"></div>
+                                </di>
+                        </div>
+                    </form>
+            </div>
         </div>
     </div>
 
-    <div id="navLinks">
-        <ul>
-            <li class="itemLinks" data-pos="0px"></li>
-            <li class="itemLinks" data-pos="-550px"></li>
-            <li class="itemLinks" data-pos="-1100px"></li>
-            <li class="itemLinks" data-pos="-1650px"></li>
-        </ul>
-    </div>
+    
+</div>
 </body>
 
-<script></script>
+<script>
+    //$('#county-select').dropdown();
+</script>
 </html>
