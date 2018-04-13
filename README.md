@@ -37,12 +37,12 @@ for all these components puts it well within the realm of feasibility.
 - 04/06/18 - Successfully deployed the testing front-end and back-end to Heroku, a free application hosting service. 
 
 ### To Do:
-- [ ] Revise the front-end - create a simplify and easy to navigate UI 
+- [x] Revise the front-end - create a simplify and easy to navigate UI 
 - [ ] Testing - write a testing script and began testing
 - [ ] Deploy final code to Heroku
 
 Contributors:
 1. Ben Cardwell (team coordinator): Documentation
-2. Jen (Duyen) Ho: Front-end & back-end developer 
+2. Jen (Duyen) Ho: Front-end and back-end 
 3. Peter Lin: Research, media, and testing 
-4. Roberto Diaz: Back-end developer 
+4. Roberto Diaz: Back-end and testing
