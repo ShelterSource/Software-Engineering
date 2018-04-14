@@ -3,11 +3,22 @@ html, body {
     padding: 0;
 }
 
-#header {
+#header1 {
     padding-top: 150px;
     width: 100%;
     height: 890px;
     background-image: url("eyes.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    margin-top: -50px;
+}
+
+#header2 {
+    padding-top: 150px;
+    width: 100%;
+    height: 890px;
+    background-image: url("boy.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; 
@@ -21,13 +32,13 @@ html, body {
 }
 
 #logo1 {
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
 }
 
 /* size of question */
 #welcome2 {
-    color: rgb(240, 142, 51);
+    color: rgb(255, 255, 255);
     font-family: 'Quicksand';
     text-align: center;
     font-size: 180%;
@@ -82,7 +93,7 @@ input[type=text], select {
 }
 
 #itemOne {
-    background-color:rgba(0, 0, 0, 0.767);
+    background-color:rgba(0, 0, 0, 0.753);
     text-align: center;
     padding-top: 80px;
 }
@@ -115,7 +126,7 @@ input[type=text], select {
     height: 80px;
     width: 600px;
     background-color: black;
-    margin-top: 80px;
+    margin-top: 70px;
     margin-left: -70px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -126,7 +137,7 @@ input[type=text], select {
     height: 80px;
     width: 600px;
     background-color: black;
-    margin-top: 125px;
+    margin-top: 135px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -136,15 +147,16 @@ input[type=text], select {
     height: 80px;
     width: 600px;
     background-color: black;
-    margin-top: 90px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    position: fixed;
+    top: 290px;
 }
 
 /* submit button styling */
 input[type=submit] {
     background-color: rgb(27, 27, 27);
-    color: rgb(240, 142, 51);
+    color: rgb(192, 192, 192);
     border: 0 none;
     cursor: pointer;
     font-family: 'Quicksand';
@@ -156,13 +168,13 @@ input[type=submit]:focus {
 
 /* icon color */
 i {
-    color: rgb(240, 142, 51);
+    color: rgb(177, 177, 177);
 }
 
 /* start form button*/
 #startButton {
     margin-left: 150px;
-    font-size: 30px;
+    font-size: 25px;
     border: none;
     height: 50px;
     width: 300px;
@@ -171,7 +183,7 @@ i {
     cursor: pointer;
     font-family: 'Quicksand';
     cursor: pointer;
-    color: rgb(240, 142, 51);
+    color: rgb(255, 255, 255);
 }
 
 #startButton:focus {
@@ -179,7 +191,12 @@ i {
 }
 
 #startButton a:visited {
-    color: rgb(240, 142, 51);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+#startButton a {
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
@@ -209,10 +226,121 @@ i {
     height: 350px;
     width: 600px;
     border-radius: 10px;
-    -moz-box-shadow: 0 0 5px 5px black;
-    -webkit-box-shadow: 0 0 10px 5px black;
-    box-shadow: 0 0 30px 3px rgb(39, 39, 39);
+    -moz-box-shadow: 0 0 5px 5px rgb(77, 77, 77);
+    -webkit-box-shadow: 0 0 10px 5px rgb(78, 78, 78);
+    box-shadow: 0 0 30px 3px rgb(71, 71, 71);
     overflow: hidden; /* wrap overflow content */
+}
+
+/* result page header*/
+#resultHead{
+    width: 100%;
+    height: 180px;
+    background-color: black;
+}
+
+#header3 {
+    padding-top: 150px;
+    width: 100%;
+    height: 100%;
+    background-image: url("brick.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    margin-top: -50px;
+    position: fixed;
+}
+
+#logoResult {
+    margin-left: -100px;
+    padding-top: 20px;
+}
+
+#logoResult1 {
+    width: 110px;
+    height: 110px;
+}
+
+/* result page home icon */
+#goHome {
+    float: right;
+    padding-top: 70px;
+}
+
+#homeIcon {
+    color: rgb(240, 142, 51);
+}
+
+/* contain php table*/
+#containPhP {
+    background-color: rgb(255, 255, 255);
+    min-width: 500px;
+    min-height: 2100px;
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%
+}
+
+th, td {
+    width: 300px;
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: black;
+    color: white;
+}
+
+tr:hover {
+    background-color:#f5f5f5;
+}
+
+.bigRow {
+    width: 400px;
+}
+
+.smallRow {
+    width: 100px;
+}
+
+.effect8
+{
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.effect8:before, .effect8:after
+{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:10px;
+    bottom:10px;
+    left:0;
+    right:0;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.effect8:after
+{
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
 }
 
 #navLinks {
