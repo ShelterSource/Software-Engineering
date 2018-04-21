@@ -34,12 +34,16 @@ for all these components puts it well within the realm of feasibility.
 - 03/26/18 - Create the database -> Imported researched data of local shelters in Dekalb and Fulton to MySQL database - specified columns and its type, set up primary keys and foreign keys. 
 - 03/26-31/18 - Research to connect database with front-end -> learning to use PHP and SQL for querying.
 - 04/01/18 - Successfully connected the database to the front-end -> created a functional .html form containing dropdown menus with various user selected options. Once submitted, the form will connect to the databae via php and return the query in the form of a list of shelters depending on the options selected. 
-- 04/06/18 - Successfully deployed the testing front-end and back-end to Heroku, a free application hosting service. 
+- 04/06/18 - Successfully deployed the testing front-end and back-end to Heroku, a free application hosting service.
+- 04/10/18 - Started research for unit testing - looked into PHPUnit.
+- 04/11/18 - Revised the front-end -> added Bootstrap, Semantic UI, Animate.css, and used Javascript to provide dynamic and aesthetic appeal
+- 04/12/18 - Revising back-end to follow OOP concepts for modularity and unit testing. 
+
 
 ### To Do:
 - [x] Revise the front-end - create a simplify and easy to navigate UI 
-- [ ] Testing - write a testing script and began testing
-- [ ] Deploy final code to Heroku
+- [x] Testing - write a testing script and began testing
+- [x] Deploy final code to Heroku
 
 Contributors:
 1. Ben Cardwell (team coordinator): Documentation
